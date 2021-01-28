@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(250, 250, 250);
+}
+
+.main-container {
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 4px;
+  width: 380px;
+  height: 400px;
+  margin: 20px auto;
+  background: rgb(247, 247, 247);
+  padding: 20px;
+}
+
+.instagram-title {
+  text-align: center;
+  margin: 10px auto;
+  /* border: 1px solid green; */
+}
+.form-container {
+  /* border: 1px solid rebeccapurple; */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.username-field > input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background: rgb(226, 226, 226);
+}
+
+.username-field {
+  /* border: 1px solid yellow; */
+  text-align: center;
+}
+
+.password-field {
+  text-align: center;
+}
+
+.password-field > input[type="password"] {
+  width: 300px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: none;
+  background: rgb(226, 226, 226);
+}
+
+.signin-btn {
+  text-align: center;
+  width: 300px;
+  /* border: 1px solid rgb(128, 36, 0); */
+  margin: 10px auto;
+  padding: 6px;
+  background: rgb(64, 115, 180);
+  border-radius: 4px;
+}
+.signin-btn input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.signin-btn input[type="submit"] {
+  border: none;
+  background: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.signup-link {
+  /* border: 1px solid red; */
+  background: rgb(240, 240, 240);
+  width: 380px;
+  padding: 20px;
+  margin-top: 10px;
+  /* border-radius: 4px; */
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+}
+.signup-link:hover {
+  cursor: pointer;
+}
+
+.signup-link a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(64, 115, 180);
+}

@@ -1,12 +1,20 @@
-<h1>Log In</h1>
+<div class="main-container">
+    <h1 class="instagram-title">Instagram</h1>
+    <form action="/session" method='POST' class="form-container">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <div class="username-field">
+            <input type="text" name="user[username]" placeholder="username">
+        </div>
+        <div class="password-field">
+            <input type="password" name="user[password]" placeholder="password">
+        </div>
+        <div class="signin-btn">
+            <input type="submit" value="Log In">
+        </div>
+    </form>
 
-<form action="/session" method='POST'>
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <label for="username">Username</label>
-    <input type="text" name="user[username]" id='username'><br />
-    <label for="password">Password</label>
-    <input type="password" name="user[password]" id="password"><br />
-    <input type="submit" value="Log In">
+</div>
 
-
-</form>
+<div class="signup-link">
+    Don't Have an account? <%= link_to "Sign Up",  new_user_url %>
+</div>

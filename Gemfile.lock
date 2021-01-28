@@ -87,6 +87,7 @@ GEM
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     debug_inspector (1.0.0)
+    did_you_mean (1.5.0)
     diff-lcs (1.4.4)
     erubi (1.10.0)
     ffi (1.14.2)
@@ -242,6 +243,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  did_you_mean
   jbuilder (~> 2.7)
   listen (~> 3.3)
   pg (~> 1.1)
