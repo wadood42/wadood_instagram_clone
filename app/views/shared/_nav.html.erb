@@ -9,7 +9,7 @@
         <li class="nav-link"><i class="fa fa-envelope"></i></li>
         <li class="nav-link"><i class="fa fa-heart"></i></li>
         <li class="nav-link dropdown">
-            <%= link_to user_url(current_user) do %>
+            <%= link_to user_url(current_user.id) do %>
             <i class='fa fa-user'></i>
             <% end %>
         </li>
