@@ -10,8 +10,8 @@ body {
   border-radius: 4px;
   width: 380px;
   height: 400px;
-  margin: 20px auto;
-  background: rgb(247, 247, 247);
+  margin: 140px auto;
+  background: rgb(250, 250, 250);
   padding: 20px;
 }
 
@@ -74,16 +74,16 @@ body {
 
 .signup-link {
   /* border: 1px solid red; */
-  background: rgb(240, 240, 240);
-  width: 380px;
+  background: rgb(252, 252, 252);
+  border: 1px solid rgb(216, 216, 216);
+  /* width: 380px; */
   padding: 20px;
-  margin-top: 10px;
   /* border-radius: 4px; */
-  margin: auto;
+  margin-top: 80px;
   text-align: center;
   font-size: 12px;
 }
-.signup-link:hover {
+.signup-link > a:hover {
   cursor: pointer;
 }
 

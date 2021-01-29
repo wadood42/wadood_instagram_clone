@@ -1,14 +1,30 @@
-<h1>Create User</h1>
+<div class="signup-main-container">
+    <div class="instagram-title signup-title">
+        <h1>Ayesha</h1>
+        <p class="description">Sign up to see photos and videos from your friends.</p>
+    </div>
+    <div class="signup-form">
+        <form action="<%= users_url %>" method="POST">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <div class="email-field">
+                <input type="email" name="user[email]" placeholder="Email">
+            </div>
+            <div class="fullname-field">
+                <input type="text" name="user[full_name]" placeholder="Full Name">
+            </div>
+            <div class="username-field">
+                <input type="text" name="user[username]" id="username" placeholder="Username">
+            </div>
+            <div class="password-field">
+                <input type="password" name="user[password]" placeholder="Password">
+            </div>
+            <div class="signup-btn">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </div>
 
-
-<form action="<%= users_url %>" method="POST">
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <label for="username">Username</label>
-    <input type="text" name="user[username]" id="username"><br />
-    <label for="password">Password</label>
-    <input type="password" name="user[password]" id="password"><br />
-    <input type="submit" value="Sign Up">
-
-
-
-</form>
+</div>
+<div class='login-link'>
+    Have an account? <%= link_to "Login", new_session_url %>
+</div>

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+.signup-main-container {
+  margin: 60px auto 10px auto;
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 4px;
+}
+.instagram-title {
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+.signup-title h1 {
+  /* border: 1px solid green; */
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(95, 93, 93);
+}
+
+.description {
+  /* border: 1px solid red; */
+  font-weight: bold;
+  width: 240px;
+  margin: auto;
+  color: rgb(201, 197, 197);
+}
+
+.signup-form {
+  /* border: 1px solid red; */
+  padding: 10px;
+}
+
+.email-field {
+  text-align: center;
+}
+.email-field > input[type="email"] {
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background: rgb(226, 226, 226);
+  width: 300px;
+  border: none;
+}
+
+.fullname-field > input[type="text"] {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background: rgb(226, 226, 226);
+}
+.fullname-field {
+  text-align: center;
+}
+
+.signup-btn {
+  text-align: center;
+  width: 300px;
+  /* border: 1px solid rgb(128, 36, 0); */
+  margin: 10px auto;
+  padding: 6px;
+  background: rgb(64, 115, 180);
+  border-radius: 4px;
+}
+
+.signup-btn > input[type="submit"] {
+  border: none;
+  background: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.signup-btn > input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.login-link {
+  width: 400px;
+  border: 1px solid rgb(218, 217, 217);
+  padding: 20px;
+  text-align: center;
+  margin: 10px auto;
+}
+.login-link a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(64, 115, 180);
+}

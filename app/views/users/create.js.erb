@@ -1,0 +1,6 @@
+
+var users = document.querySelector("#users");
+users.insertAdjacentHTML("beforeend", "<%= j render(@user) %>");
+
+
+document.getElementById("new_user").reset();

@@ -4,8 +4,12 @@ class User < ApplicationRecord
     validates :username, presence: true
     validates :password_digest, presence: { message: 'Password can\'t be blank'}
     validates :password, length: { minimum: 5, allow_nil: true }
+    validates :email, :full_name, presence: true
 
     after_initialize :ensure_session_token
+
+
+    has_one_attached :profile_picture
 
 
 

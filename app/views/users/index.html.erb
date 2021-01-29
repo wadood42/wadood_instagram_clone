@@ -1,1 +1,18 @@
 <h1>All Users</h1>
+
+<ul id="users">
+    <%= render @users %>
+</ul>
+
+
+<%= form_for @user, url: users_url, id: "update-form", method: 'post', :remote => true do |form| %>
+<%= form.label :username%>
+<%= form.text_field :username %><br />
+<%= form.label :email %>
+<%= form.text_field :email %><br />
+<%= form.label :password %>
+<%= form.password_field :password%><br />
+<%= form.label :full_name %>
+<%= form.text_field :full_name %><br />
+<%= form.submit %>
+<% end %>

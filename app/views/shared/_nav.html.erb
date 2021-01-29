@@ -1,0 +1,23 @@
+<nav class="main-nav">
+    <ul class="nav-links">
+        <li class="nav-insta"><%= link_to "Instagram", users_url %></li>
+        <li class="nav-link">
+            <%= link_to users_url do %>
+            <i class="fa fa-home"></i>
+            <% end %>
+        </li>
+        <li class="nav-link"><i class="fa fa-envelope"></i></li>
+        <li class="nav-link"><i class="fa fa-heart"></i></li>
+        <li class="nav-link dropdown">
+            <%= link_to user_url(current_user) do %>
+            <i class='fa fa-user'></i>
+            <% end %>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+
+    </ul>
+</nav>
