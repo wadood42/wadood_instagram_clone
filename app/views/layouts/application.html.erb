@@ -13,7 +13,7 @@
 
 <body>
 
-    <%= render "shared/nav", current_user: current_user %>
+    <%= render "shared/nav" %>
     <% if flash[:errors]%>
     <div class="errors-container">
         <% flash[:errors].each do |err|%>
